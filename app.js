@@ -3,6 +3,7 @@ var express = require('express'),
   fs = require('fs'),
   mongoose = require('mongoose');
 
+/*
 mongoose.connect(config.db);
 var db = mongoose.connection;
 db.on('error', function () {
@@ -15,6 +16,7 @@ fs.readdirSync(modelsPath).forEach(function (file) {
     require(modelsPath + '/' + file);
   }
 });
+*/
 var app = express();
 
 require('./config/express')(app, config);

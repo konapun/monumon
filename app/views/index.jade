@@ -1,5 +1,80 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div#carousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='carousel', data-slide-to='0')
+      li(data-target='carousel', data-slide-to='1')
+      li(data-target='carousel', data-slide-to='2')
+    div.carousel-inner
+      div.item.active
+        img(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==')
+        div.container
+          div.carousel-caption
+            h1 slide 1
+            p Caption for slide 1
+      div.item.active
+        img(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==')
+        div.container
+          div.carousel-caption
+            h1 slide 2
+            p Caption for slide 2
+      div.item.active
+        img(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==')
+        div.container
+          div.carousel-caption
+            h1 slide 3
+            p Caption for slide 3
+    a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+    a.right.carousel-control(href='carousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
+
+  div.container.marketing
+    div.row
+      div.col-lg-4
+        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', style='width: 140px; height: 140px;')
+        h2 Heading
+        p Paragraph description
+        p
+          a.btn.btn-default(href='#', role='button') View details &raquo;
+      div.col-lg-4
+        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', style='width: 140px; height: 140px;')
+        h2 Heading
+        p Paragraph description
+        p
+          a.btn.btn-default(href='#', role='button') View details &raquo;
+      div.col-lg-4
+        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', style='width: 140px; height: 140px;')
+        h2 Heading
+        p Paragraph description
+        p
+          a.btn.btn-default(href='#', role='button') View details &raquo;
+  
+    h2.featurette-divider
+    div.row.featurette
+      div.col-md-7
+        h2.featurette-heading Heading
+          span.text-muted Subtext
+        p.lead A description for the thing
+      div.col-md-5
+        img.featurette-image.img-responsive(data-src='holder.js/500x500/auto')
+    
+    h2.featurette-divider
+    div.row.featurette
+      div.col-md-5
+        img.featurette-image.img-responsive(data-src='holder.js/500x500/auto')
+      div.col-md-7
+        h2.featurette-heading Another thing
+          span.text-muted Subtext
+        p.lead
+          Another description for a thing
+    
+    h2.featurette-divider
+    div.row.featurette
+      div.col-md-7
+        h2.featurette-heading Heading
+          span.text-muted Subtext
+        p.lead A description for the thing
+      div.col-md-5
+        img.featurette-image.img-responsive(data-src='holder.js/500x500/auto')

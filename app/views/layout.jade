@@ -5,8 +5,29 @@ html(lang='en')
     meta(name='viewport', content='width=device-width')
     title= title
     block css
+      link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
       link(rel='stylesheet', href='/css/style.css')
     block js
       script(src='http://localhost:35729/livereload.js')
   body
+    div.navbar-wrapper
+      div.container
+        div.navbar.navbar-inverse.navbar-static-top(role='navigation')
+          div.container
+            div.navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='#') Monumon
+            div.navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.active
+                  a(href='#') home
+                li
+                  a(href='#') about
+                li
+                  a(href='#') contact
+    
     block content
