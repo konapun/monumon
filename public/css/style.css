@@ -1,7 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 body {
   padding-bottom: 40px;
   color: #515151;
-  background-image: url(../img/congruent_outline.png)
+  background-image: url(../img/congruent_pentagon.png)
+}
+
+body > .container {
+  /* background: white; */
+}
+
+.banner {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: rgba(177,246,203,0.6);
+  box-shadow: 0 5px 10px rgba(0,0,0,.6)
 }
 
 .navbar-wrapper {
@@ -22,6 +35,16 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+}
+
+.branding {
+  margin-left: 20px;
+  position: absolute;
+}
+.branding .brand {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  color: white !important;
 }
 
 .carousel {

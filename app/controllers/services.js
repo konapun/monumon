@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 //  Product = mongoose.model('Product');
 
 module.exports = function(router) {
-  router.get('/products', function (req, res, next) {
+  router.get('/services', function (req, res, next) {
     res.render('index');
-    
+
     /*
     Article.find(function (err, articles) {
       if (err) return next(err);

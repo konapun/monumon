@@ -11,41 +11,45 @@ html(lang='en')
       script(src='http://localhost:35729/livereload.js')
   body
     .navbar-wrapper
-      .container
-        .navbar.navbar-inverse(role='navigation')
-          .container
-            .navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='#') monumon
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li.active
-                  a(href='#') Home
-                li
-                  a(href='#about') About
-                li
-                  a(href='#contact') Contact
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Dropdown
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='#') Action
-                    li
-                      a(href='#') Another action
-                    li
-                      a(href='#') Something else here
-                    li.divider
-                    li.dropdown-header Nav header
-                    li
-                      a(href='#') Separated link
-                    li
-                      a(href='#') One more separated link
+      .banner
+        .branding
+          a.brand(href='/') monumon
+        .container
+          .navbar(role='navigation')
+            .container
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                  li.active
+                    a(href='/') home
+                  li
+                    a(href='/services') services
+                  li
+                    a(href='/about') about
+                  li
+                    a(href='/contact') contact
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown
+                      span.caret
+                    ul.dropdown-menu(role='menu')
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider
+                      li.dropdown-header Nav header
+                      li
+                        a(href='#') Separated link
+                      li
+                        a(href='#') One more separated link
 
     #carousel.carousel.slide(data-ride='carousel')
       // Indicators
